@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratios</title>
+    <link rel="icon shortcut" href="http://localhost:8081/static/img/ratios.png">
+    <link rel="stylesheet" href="http://localhost:8081/static/css/ratio1.css">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo"><h2><span class="s">s.</span><span>Stock Manager</span></h2></div>
+        <div class="nav">
+            <ul>
+                <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+                <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+                <li><a href="http://localhost:8081/static/index1.html">Approvisionnement</a></li>
+                <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+                <li><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+               
+              
+            </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+    </header>
+    
+    <h1><div id="h1">Ratios de rotation de stock</div></h1>
+    <table><tr><td>
+    <fieldset class="fieldset">
+        <table class="table1">
+            <tr>
+                <td><label for="moyen">Stock moyen:</label></td>
+                <td><input type="number" id="moye" id class="moyen" readonly></td>
+                <td><label id="vola"></label></td>
+            </tr>
+            <tr>
+                <td><label for="utile">Coût d'achat des matière première utilisées:</label></td>
+                <td><input type="number" id="utile" class="utile"></td>
+                <td><label id="vola">Ariary</label></td>
+            </tr>
+            <tr>
+                <td><label for="cour">Coût de production des produits en cours:</label></td>
+                <td><input type="number" id="cour" class="cour" ></td>
+                <td><label id="vola">Ariary</label></td>
+            </tr>
+            <tr>
+                <td><label for="fini">Coût de production des produits finis:</label></td>
+                <td><input type="number" name="" id="fini" class="fini" ></td>
+                <td><label id="vola">Ariary</label></td>
+            </tr>
+            <tr>
+                <td><label for="vend">Coût d'achat des marchandises vendues:</label></td>
+                <td><input type="number" id="vend" class="vend"></td>
+                <td><label id="vola">Ariary</label></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    </td>
+    <td>
+        <fieldset id="table">
+            
+        <table >
+            <tr>
+                <td><button class="btn1">+</button></td>
+                <td><label for="primary">Matière première:</label></td>
+                <td><span id="primary"></span></td>
+            </tr>
+            <tr>
+                <td><button class="btn2">+</button></td>
+                <td><label for="track">Produits en cours:</label></td>
+                <td><span id="track"></span></td>
+            </tr>
+            <tr>
+                <td><button class="btn3">+</button></td>
+                <td><label for="end">Produits finis:</label></td>
+                <td><span id="end"></span></td>
+            </tr>
+            <tr>
+                <td><button class="btn4">+</button></td>
+                <td><label for="vende">Marchandises vendues</label></td>
+                <td><span id="vende"></span></td>
+                </tr>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</tr></table>
+
+
+<h1><span id="h1">Ratios en temps d'écoulement</span></h1>
+<table id="tab">
+    <tr><td><fieldset class="fieldset1">
+        <table id="tabl1">
+            <tr>
+                <td><label for="mat" class="donne1">Stock moyen de matière première:</label></td>
+                <td><input type="number"  class="moyen"  id="mat"></td>
+            </tr>
+            <tr>
+                <td><label for="tra"  class="donne1">Stock moyen des travaux en cours:</label></td>
+                <td><input type="number"  class="moyen" id="tra"></td>
+            </tr>
+            <tr>
+                <td><label for="pro"  class="donne1">Cout annuel de production finis :</label></td>
+                <td><input type="number"  class="moyen" id="pro"></td>
+            </tr>
+            <tr>
+                <td><label for="fini"  class="donne1">Stock moyen de produit finis:</label></td>
+                <td><input type="number"   class="moyen" id="finis"></td>
+            </tr>
+            <tr>
+                <td><label for="" class="donne1">Consommation annuelle de matière</label></td>
+                <td><input type="number" class="moyen" id="ann"></td>
+            </tr>
+            <tr>
+                <td><label for="ope"  class="donne1">Le temps d'opération:</label></td>
+                <td><input type="number"  class="moyen" id="ope"></td>
+              <td><select name="" id="">
+                <option value="mois">Mois</option>
+                <option value="sem">Semaine(s)</option>
+                <option value="jour">Jour(s)</option>
+              </select></td>
+            </tr>
+        </table>
+    
+        <span id="erreur"></span>
+        
+    </fieldset>
+    </td>
+    <td>
+        <fieldset id="table">
+           
+            <table>
+                <tr>
+                    <td><button id="btn5">+</button></td>
+                    <td><label class="donne">Matière première:</label></td>
+                    <td><span id="prim"></span></td>
+                </tr>
+                <tr>
+                    <td><button id="btn6">+</button></td>
+                    <td><label class="donne">Produits en cours de fabrication:</label></td>
+                    <td><span id="manu"></span></td>
+                </tr>
+                <tr>
+                    <td><button id="btn7">+</button></td>
+                    <td><label class="donne">Produits finis:</label></td>
+                    <td><span id="ends"></span></td>
+                </tr>
+            </table>
+        </fieldset></td></tr>
+</table>
+
+    <script src="http://localhost:8081/static/js/ratios1.js"></script>
+     <script src="http://localhost:8081/static/js/index1.js"></script> 
+</body>
+</html>

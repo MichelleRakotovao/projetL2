@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaire Comptable</title>
+    <link rel="icon shortcut" href="http://localhost:8081/static/img/peti.png">
+    <link rel="stylesheet" href="http://localhost:8081/static/css/inv.css">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <header id="header">
+        <div class="logo"><h2 id="h2"><span class="s">s.</span><span id="sto">Stock Manager</span></h2></div>
+        <div class="nav">
+            <ul>
+                <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+                <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+                <li><a href="http://localhost:8081/static/index1.html">Approvisionnement</a></li>
+                <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+                <li><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+            </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+   
+    </header>
+</head>
+
+<body>
+<script src="http://localhost:8081/static/js/chart.js"></script>
+    <main id="ART">
+        <table >
+            <tr><td>
+                <table border="2px" class="table">
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Nombres</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Santé et cosmétique</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" name="nombre" id="nombre" class="val1" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix1" readonly></td>
+                            </div>   
+                       
+                                
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Bébé et enfant</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val2" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix2" readonly></td>
+                            </div> 
+                     
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Alimentation et locaux</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val3" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix3"readonly></td>
+                            </div> 
+                         
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Eléctronique et ménagère</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val4" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix4" readonly></td>
+                            </div> 
+                          
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Artisanaux</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val5" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix5" readonly></td>
+                            </div> 
+                           
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Accessoires sports</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val6" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix6" readonly></td>
+                            </div> 
+                          
+                        </tr>
+                        <tr>
+                            <div class="donne1">
+                                <td class="lab"><span>Accessoires animaux</span></td>
+                            </div>
+                            <div class="donne2">
+                                <td><input type="number" id="nombre" class="val7" readonly></td>
+                            </div>
+                            <div class="donne3">
+                                <td><input type="number" id="montant" class="prix7" readonly></td>
+                            </div> 
+                        
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <fieldset class="fiel2">
+                  <legend><fieldset class="fiel3"><h3>Insertion des artiles</h3></fieldset></legend>
+                   <form action="" method="get" id="form1">
+                    <table class="table2">
+                        <tr>
+                            <td><label for="cat">Catégorie</label></td>
+                            <td>
+                                <select name="" id="cat">
+                                    <option value="1">Santé et cosmétique</option>
+                                    <option value="2">Bébé et enfant</option>
+                                    <option value="3">Alimentation et locaux</option>
+                                    <option value="4">Elétronique et ménagère</option>
+                                    <option value="5">Artisanaux</option>
+                                    <option value="6">Accessoires sports</option>
+                                    <option value="7">Animaux de compagnie</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="arti">Nom d'article:</label></td>
+                            <td><input type="text" name="" id="arti" class="nombre"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="quan">Quantité:</label></td>
+                            <td><input type="number" name="" id="quan" class="nombre"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pri">Prix/Unité:</label></td>
+                            <td><input type="number" name="" id="pri" class="nombre"></td>
+                        </tr>
+                    </table>
+                   <div><span><button id="ajou">Ajouter</button></span></div>
+                   </form>
+                </fieldset>
+            </td></tr>
+         </table>
+               
+                <fieldset class="fiel1">
+                   <div> <button class="btn1">+</button><label id="name">Nombre totaux des produits:</label><span class="valeur1"></span></div>
+                    <div><button class="btn2">+</button><label id="name">Montant totaux:</label><span class="valeur2"></span></div>
+                </fieldset>
+                 
+                 <table id="sary">
+                    <tr><td><h2 id="graphe"></h2></td></tr>
+                    <tr>
+                        <td><canvas id="courbe3" height="70%" width="100%"></canvas></td>
+                        <td><h4 id="affi3"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><canvas id="courbe4"  width="50%"></canvas></td>
+                        <td><h4 id="affi4"></h4></td>
+                    </tr>
+                  
+                    <tr>
+                        <td><canvas id="courbe2" height="70%" width="100%"></canvas></td>
+                        <td><h4 id="affi2"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><canvas id="courbe" width="50%"></canvas></td>
+                     <td><h4 id="affi1"></h4></td>
+                    </tr>
+                 </table>
+                 <!-- <span id="stat"></span>
+        
+                 <table>
+                    <tr>
+                        <th><span id="nom"></span></th>
+                        <th><span id="pour"></span></th>
+                    </tr>
+                 </table> -->
+                 
+    </main>
+   <script src="http://localhost:8081/static/js/inv.js"></script>
+   <script src="http://localhost:8081/static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* splash */
+h1{
+  color: #fff;
+  font-family:Times New Roman;
+  font-size: 105px; 
+  background-position: center;
+  margin-left: 350px;
+  padding-top: 5%;
+  -webkit-text-stroke: 2px black;
+ }
+ .slider{
+  background: url(http://localhost:8081/static/images/2.jpg);
+  height: 380%;
+  width: 100%;
+  animation: slide 12s infinite;
+  flex-direction: column;
+}
+@keyframes slide{
+  25%{
+      background:url(http://localhost:8081/static/images/2c.jpg);
+  }
+  50%{
+      background: url(http://localhost:8081/static/images/3c.jpg);
+  }
+  75%{
+      background:url(http://localhost:8081/static/images/rat1.jpeg);
+  }
+  100%{
+    background:url(http://localhost:8081/static/images/qra.jpg);
+}
+
+}
+/* burg&home*/
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  top:0;
+  left: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.menu{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('http://localhost:8081/static/images/douze.jpg');
+}
+ul li a{
+  text-decoration: none;
+  border: 6px solid transparent;
+  color: white;
+  border-radius: 50px;
+  transition: 200ms;
+}
+ul li a:hover{
+  background-color: #7b68ee;
+}
+ul li{
+  list-style-type: none;
+  display: inline;
+  margin: 13px;
+}
+.s{
+  color:#f9DB24;
+}
+h2{
+  color: #7b68ee;
+}
+header{
+  width: 100%;
+  height: auto;
+  background-color: #0B162C;
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.logo{
+  width: auto;
+  height: 100%;
+}
+.nav{
+  width: 60%;
+  height: 100%;
+  text-align:center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+.logout{
+  width:20%;
+  height:100%;
+}
+.btn2{
+  margin-top:14%;
+  margin-left: 27%;
+  background-color: #7b68ee;
+  color: white;
+  width: auto;
+  height: 33%;
+  border-radius: 50px;
+}
+ h4{
+  color: #fff;
+    font-family:Britannic Bold;
+    font-size: 80px; 
+    background-position: center;
+   margin-left: 400px;
+    padding-top: 94px;
+ }
+
+
+
+/* analyse */
+.lm{
+  background-image: linear-gradient(white,rgba(130, 162, 209, 0.863));
+}
+main{
+  width: 100%;
+  height: 85%;
+}
+label{
+  margin-top:1%;
+}
+button{
+  transition: 200ms;
+}
+button:hover{
+  transform: scale(1.2,1.2);
+}
+/* .info{
+  background-color: red;
+  margin-top: 10%;
+  border-radius: 20px;
+  display:inline;
+  margin-left: 5%;
+  width: 90%;
+} */
+.info table{
+  background-color: transparent;
+}
+.art{
+  margin-top: 5%;
+}
+table{
+  margin-top: 03%;
+  border-collapse:collapse;
+  background-position: center;
+  background-color: white; 
+  opacity:0.8;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+.lst{
+  margin-top: 02%;
+}
+td th{
+  border: blue;
+  border-top: initial;
+}
+td input{
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+  margin-left: 35%;
+  width: 30%;
+}
+.ans{
+  padding-left: 28%;
+}
+.an{
+  padding-left: 21%;
+}
+p{
+  color: #061C37;
+  font-size:40px;
+  font-family: 'Lucida Sans';
+  text-align: center;
+}
+.btn3{
+  background-color: #7b68ee;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 45%;
+  border-radius: 10px;
+  width: 9%;
+  transform: scale(1.2,1.2);
+  cursor: pointer;
+}
+#img{
+  width: 300px;
+  height:300px;
+  margin-left:550px;
+}

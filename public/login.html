@@ -1,0 +1,69 @@
+<html class="all">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8081/static/css/styleslog.css"/> 
+   <script src="http://localhost:8081/static/javascript/login.js"></script>
+   <link rel="icon shortcut" href="http://localhost:8081/static/images/télécharger.jpg">
+    <title>Login</title>
+</head>
+<body>
+    <div><h2><span class="s">s.</span><span>Stock Manager</span></h2></div>
+    <form>
+
+    <div>
+        <img src="http://localhost:8081/static/images/télécharger.jpg" class="ima">
+    </div>
+    <div class="input">
+        <div>
+            <img src="http://localhost:8081/static/images/user.png" class="im">
+        </div>
+       
+        <input type="text" tb_nom placeholder="Nom" class="nom" id="name"/>
+    </div>
+    <div class="input">
+        <div>
+            <img src="http://localhost:8081/static/images/email.png" class="im">
+        </div>
+        <input type="mail" tb_nom placeholder="E_mail" class="mail" id="maill"/>
+    </div>
+    <div class="input">
+        <div>
+            <img src="http://localhost:8081/static/images/padlock.png"  class="im">
+        </div>
+        <input type="password" id="pass" name="pass" tb_nom placeholder="Mot de passe"/>
+        <img src="http://localhost:8081/static/images/invisible.png" id="eye" onclick="changer()"/>
+    </div>
+    <script> 
+    e=true;
+        function changer(){
+            if(e){
+                document.getElementById("pass").setAttribute("type","text");;
+                document.getElementById("eye").src="http://localhost:8081/static/images/eye.png";
+                e=false;
+            }
+            else{
+                document.getElementById("pass").setAttribute("type","password");
+                document.getElementById("eye").src="http://localhost:8081/static/images/invisible.png";
+                e=true;
+            }
+        }
+        </script>
+   
+    <input class="btn" type="button" name="" value="S'inscrire" id="btn">
+    <script>
+        
+        btn.addEventListener('click',()=>{
+           if ((document.getElementById('name').value=="")||(document.getElementById('maill').value=="")||(document.getElementById('pass').value!=123456)){
+            alert('Veuillez remplir toutes les informations demandées ou vérifier votre mot de passe');
+           }
+            else{
+                location.replace('http://localhost:8081/static/Article.html')
+            }
+       });
+    </script>
+     
+</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approvisionnement</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost:8081/static/images/risk.png">
+    <link rel="stylesheet" href="http://localhost:8081/static/style.css">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    <script src="http://localhost:8081/static/chart.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><h2 class="nom"><span class="s">s.</span>Stock Manager</h2></div>
+        <div class="nav">
+          <ul>
+             <!-- <li class="analyse_stock"><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+             <li class="analyse_stock"> <a href="hh">Analyse de stock</a></li>
+             <li class="app"><a href="#">Approvisionnement</a></li>
+            <li class="aiz"> <a href="#">Inventaire comptable</a></li>
+            <li class="ratio"><a href="#">Ratios</a></li> -->
+            <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+            <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+            <li><a href="http://localhost:8081/static/index1.html">Approvisionnement</a></li>
+            <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+            <li><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+          </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+    </header>
+    <main id="container">
+      <div class="form-container">
+          <form  method="get">
+             <table>
+                 <tr>
+                    <td><label for="sel-cat" id="category-label">Catégorie:</label></td>
+                   <td><select name="category" id="sel-cat">
+                      <option value="cat1">Santé et cosmétique</option>
+                      <option value="cat2">Produits pour bébé</option>
+                      <option value="cat3">Alimentation et produits locaux</option>
+                      <option value="cat4">Appareils éléctroniques</option>
+                      <option value="cat5">Artisanaux</option>
+                      <option value="cat6">Accessoires de sport</option>
+                      <option value="cat7">Produits pour animaux</option>
+                    </select>
+                  </td>
+              
+                </tr>
+             </table>
+          </form>
+      </div>
+      <div id="conteneur">
+          <div class="canvas-container">
+            <canvas class="graphe"></canvas>
+          </div>
+        <div id="donnee">
+              <h2 id="titre">Enregistrement</h2>
+             
+                  <label for="quantite">Quantité à commander</label><br>
+                
+                    <input type="number" id="quantite" readonly>
+                  
+                  <!-- <button id="ajouter">Approvisionner</button> -->
+        </div>
+      </div>
+      
+    </main>
+</body>
+</html>
+<script src="http://localhost:8081/static/main.js"></script>

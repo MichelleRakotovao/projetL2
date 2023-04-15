@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/Article.css">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    <link rel="icon shortcut" href="http://localhost:8081/static/img/inventaire2.png">
+    <title>Article</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h2><span class="s">s.</span><span>Stock Manager</span></h2></div>
+        <div class="nav">
+            <ul>
+                <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+                <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+                <li><a href="http://localhost:8081/static/index1.html">Approvisionnement</a></li>
+                <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+                <li><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+               
+            </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+    </header>
+    <main id="ART">
+        <form action="#" method="get">
+        <div class="col">
+            <div class="col1">
+                <table class="info">
+           
+                    <tbody>
+                         <tr>
+                             <tr>
+                                 <th>
+         
+                                     <label for="libelle">LIBELLE</label>
+                                 </th>
+                                 <td>
+                                 <input type="text" name="libelle" id="libelle">
+                                 </td>
+                                 
+                             </tr>
+                             <tr>
+                                 <th>
+         
+                                     <label for="CATEGORIE">CATEGORIE</label>
+                                 </th>
+                                 <td>
+                                 <select name="categorie" id="categorie">
+                                        <option value="1">Santé et cosmétique</option>
+                                        <option value="2">Bébé et enfant</option>
+                                        <option value="3">Alimentation et locaux</option>
+                                        <option value="4">Elétronique et ménagère</option>
+                                        <option value="5">Artisanaux</option>
+                                        <option value="6">Accessoires sports</option>
+                                        <option value="7">Accessoires animaux</option>
+                                 </select>
+                                 </td>
+         
+                             </tr>
+                              <tr>
+                                 <th>
+                                     <label for="quantite">Quantité</label>
+                                 </th>
+                                 <td>
+                                 <input type="number" name="quantite" id="quantite">
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td></td>
+                                 <td>
+                                     <button class="b" id="valider">Enregistrer</button>
+                                 </td>
+         
+                             </tr>
+                         </tr>
+                         <tr>
+                             <td colspan="3"><span id="mess"></span></td>
+                        
+                         </tr>
+                    </tbody>
+                 </table>
+            </div>
+            <div class="col2">
+                <table>
+                    <tr>
+                        <th>total produit:</th>
+
+                        <td><span id="tot"></span>
+                            <!-- <input type="number" readonly> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Categorie:</th>
+                        <td>
+                                <select name="" id="cat">
+                                    <option value="1">Santé et cosmétique</option>
+                                    <option value="2">Bébé et enfant</option>
+                                    <option value="3">Alimentation et locaux</option>
+                                    <option value="4">Elétronique et ménagère</option>
+                                    <option value="5">Artisanaux</option>
+                                    <option value="6">Accessoires sports</option>
+                                    <option value="7">Animaux de compagnie</option>
+                                </select>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="number" readonly  class="nbCat" id="nbCat">
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="voir">voir</button>
+                            </td>
+                        </tr>
+                       
+                </table>
+            </div>
+            <div class="col3">
+                <button id="pro">Produits</button>
+                <h6>Les produits en stocks <hr> et leurs caractéristique</h6>
+            </div>
+        </div>
+        
+        <div id="list">
+            <div id="entete">
+                <table >
+                    <caption>
+                        ARTICLES
+                    </caption>
+                    <thead>
+                        <th>LIBELLE</th>
+                        <th>CATEGORIE</th>
+                        <th>PRIX UNITAIRE
+                        </th>
+                        <th>QUANTITE</th>
+                    </thead>
+                </table>
+
+            </div>
+        <div id="corps">
+            <table>
+                <tbody id="donnee">
+                </tbody>
+            </table>
+        </div>
+ 
+    </div>
+    </form>
+    </main>
+    <script src="http://localhost:8081/static/js/article.js"></script>
+</body>
+</html>

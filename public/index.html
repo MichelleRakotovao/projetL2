@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur QR Code</title>
+    <link rel="stylesheet" href="http://localhost:8081/static/css/style.css">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesone/6.1.1/css/all.min.css">-->
+    <header>
+        <div class="logo"><h2><span class="s">s.</span><span>Stock Manager</span></h2></div>
+        <div class="nav">
+            <ul>
+                <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+                <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+                <li><a href="#">Approvisionnement</a></li>
+                <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+                <li class="ratio"><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+                <li class="qr"><a href="http://localhost:8081/static/index.html">QR Code</a></li>
+            </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+    </header>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <input type="file" hidden>
+            <img src="" alt="qr-code">
+            <div class="content">
+                <i class="fas fa-cloud-upload"></i>
+                <p>Télécharger le QR Code pour le scan</p>
+            </div>
+        </form>
+        <div class="details">
+            <h1><a href="http://localhost:8081/static/produit.html">Cliquer ici</a></h1>
+            <div class="buttons">
+                <button class="close">Fermer</button> 
+                <button class="Copy">Copier le texte</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="http://localhost:8081/static/js/main.js"></script>
+</body>
+</html>

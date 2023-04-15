@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/courbe.css">
+    <link rel="stylesheet" href="#" type="text/html">
+    <link rel="stylesheet" href="http://localhost:8081/static/css/styles.css"/> 
+    <link rel="icon shortcut" href="http://localhost:8081/static/img/ratio.jpg">
+    <link rel="stylesheet" href="http://localhost:8081/static/style/header.css">
+    <title>Analyse de stock</title>
+    <header>
+        <div class="logo"><h2><span class="s">s.</span><span>Stock Manager</span></h2></div>
+        <div class="nav">
+            <ul>
+                <li><a href="http://localhost:8081/static/Article.html">Articles</a></li>
+                <li class="sa"><a href="http://localhost:8081/static/courbe.html">Analyse de stock</a></li>
+                <li><a href="http://localhost:8081/static/index1.html">Approvisionnement</a></li>
+                <li class="ai"><a href="http://localhost:8081/static/inv.htm">Inventaire comptable</a></li>
+                <li><a href="http://localhost:8081/static/ratio.htm">Ratios</a></li>
+                
+            </ul>
+        </div>
+        <div class="logout"><button class="btn">Déconnexion</button></div>
+    </header>
+</head>
+<body>
+    <main id="ART">
+    
+    <div>
+        <p>Analyse de Stock</p>
+    
+        </div>
+        <div class="art">
+
+       <table class="list">
+            <thead class="Hlist">
+                <tr>
+                    <th >Stock Maximum</th>
+                    <th >Stock Minimum</th>
+                </tr> 
+        
+            </thead>
+      
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    <input type="number" name="noms" id="max">
+                </td>
+                <td >
+                    <input type="number" name="nom" id="min">
+                </td>
+            </tr>
+            </tbody>
+       </table>
+       <table>
+        <thead class="Hlist">
+            <tr>
+                <th >Vente Moyenne</th>
+                <th >Jour de sécurité</th>
+            </tr> 
+    
+        </thead>
+  
+    <tbody>
+        <tr>
+            <td rowspan="2">
+                <input type="number" name="noms" id="vm">
+            </td>
+            <td >
+                <input type="number" name="nom" id="jsc">
+            </td>
+        </tr>
+        </tbody>
+        
+   </table>
+  
+   <input class="btn3" type="submit" name="" value="Enregistrer" id="btn3">
+   <span id="mess"></span>
+   <table class="list">
+       
+    <thead class="Hlist" >
+        
+        <tr>
+            <th>Stock Moyen</th>
+            <th>Stock de securité</th>
+        </tr>
+    </thead>
+    <tbody id="donnee" >
+        <tr>
+           <td  class="an" id="stockm"></td>
+           <td class="ans"  id="stocks"></td>
+            
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="courbe">
+            <div id="graphe">
+                <canvas  id ="des" style="width:900px;"></canvas>
+            </div>
+        <div class="new">
+            <fieldset>
+                <form action="#" method="get">
+                    
+                    <label for="pc">DELAI POUR LE POINT DE COMMANDE</label>
+                    <input type="number" name="pc" id="pc">
+                    <label for="cat">Catégorie</label>
+                    <select name="" id="cat">
+                        <option value="1">Santé et cosmétique</option>
+                        <option value="2">Bébé et enfant</option>
+                        <option value="3">Alimentation et locaux</option>
+                        <option value="4">Eléctronique et ménagère</option>
+                        <option value="5">Artisanaux</option>
+                        <option value="6">Accessoires sports</option>
+                        <option value="7">Accessoires animaux</option>
+                    </select>
+                    
+                    <button id="ok" >Valider</button>
+                    
+                    <span id="err"></span>
+                </form>
+            </fieldset>
+        </div>
+        
+    </div>
+</main>
+<script  src="http://localhost:8081/static/js/chart.js"></script>
+<script src="http://localhost:8081/static/javascript/analyse.js"></script>
+<!-- <script src="http://localhost:8081/static/js/courbe.js"></script> -->
+    <!-- <script type="text/html"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+</html>
