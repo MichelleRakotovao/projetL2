@@ -1,2 +1,2 @@
 # Stock manager
-`c'est dskdhskd`
+##c'est un projet de gestion de stock
